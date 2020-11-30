@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "../../../backend/data";
+import data from "../data";
 import Rating from "../components/Rating";
 
 const ProductScreen = (props) => {
@@ -44,7 +44,7 @@ const ProductScreen = (props) => {
                   {product.countInStock > 0 ? (
                     <span className="success">In Stock</span>
                   ) : (
-                    <span className="error">Unavailable</span>
+                    <span className="danger">Unavailable</span>
                   )}
                 </div>
               </li>
